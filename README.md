@@ -18,14 +18,15 @@
 
 ### As an instance user:
 
-1. Go to Configuration and scroll to the bottom
-2. Under custom css, paste the contents of `whoogle.css`
-3. Hit the Apply button
-4. Select the dark theme for the Catppuccin theme.
+1. Choose your flavour!
+2. Go to Configuration and scroll to the bottom.
+3. Under custom css, paste the contents of `css/<flavour>.css`
+4. Hit the Apply button.
 
 ### As an instance host:
 
-Add the contents of `whoogle.env` to either your environment variables or your `whoogle.env`.
+1. Choose your flavour!
+2. Add the contents of `env/<flavour>.env` to either your environment variables or your `whoogle.env`.
 
 ## 💝 Thanks to
 
