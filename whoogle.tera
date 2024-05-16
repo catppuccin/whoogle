@@ -1,0 +1,57 @@
+---
+whiskers:
+  version: 2.1.0
+  matrix:
+    - flavor
+  filename: "css/{{ flavor.identifier }}.css"
+---
+
+{%- set palette = flavor.colors -%}
+
+:root {
+    {%- if flavor.dark %}
+    {%- set prefix = "--whoogle-dark" %}
+    /* DARK THEME COLORS */
+    {%- else %}
+    {%- set prefix = "--whoogle" %}
+    /* LIGHT THEME COLORS */
+    {%- endif %}
+    {{ prefix }}-logo: #{{ palette.text.hex }};
+    {{ prefix }}-page-bg: #{{ palette.base.hex }};
+    {{ prefix }}-element-bg: #{{ palette.surface1.hex }};
+    {{ prefix }}-text: #{{ palette.text.hex }};
+    {{ prefix }}-contrast-text: #{{ palette.subtext1.hex }};
+    {{ prefix }}-secondary-text: #{{ palette.subtext0.hex }};
+    {{ prefix }}-result-bg: #{{ palette.surface0.hex }};
+    {{ prefix }}-result-title: #{{ palette.lavender.hex }};
+    {{ prefix }}-result-url: #{{ palette.rosewater.hex }};
+    {{ prefix }}-result-visited: #{{ palette.maroon.hex }};
+}
+
+#whoogle-w {
+    fill: #{{ palette.blue.hex }};
+}
+
+#whoogle-h {
+    fill: #{{ palette.red.hex }};
+}
+
+#whoogle-o-1 {
+    fill: #{{ palette.yellow.hex }};
+}
+
+#whoogle-o-2 {
+    fill: #{{ palette.blue.hex }};
+}
+
+#whoogle-g {
+    fill: #{{ palette.green.hex }};
+}
+
+#whoogle-l {
+    fill: #{{ palette.red.hex }};
+}
+
+#whoogle-e {
+    fill: #{{ palette.yellow.hex }};
+}
