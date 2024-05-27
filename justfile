@@ -2,4 +2,5 @@ _default:
   @just --list
 
 build:
-  whiskers whoogle.tera
+  whiskers templates/whoogle.tera
+  whiskers templates/env.tera
