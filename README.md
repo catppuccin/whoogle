@@ -11,21 +11,22 @@
     <a href="https://github.com/catppuccin/whoogle/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/whoogle?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
-![Whoogle Theme Preview](assets/preview.png)
+<p align="center">
+	<img src="assets/preview.webp"/>
+</p>
 
 ## Usage
 
-### As an instance user:
+### As an instance user
 
-1. Choose your flavour!
-2. Go to Configuration and scroll to the bottom.
-3. Under custom css, paste the contents of `css/<flavour>.css`
-4. Hit the Apply button.
+1. Copy the contents of the flavor of your choice from [`css/`](./css/).
+2. Go to Configuration and scroll to the bottom in Whoogle.
+3. Under custom css, paste the contents of your flavor's CSS from Step 1.
+4. Click _Apply_.
 
-### As an instance host:
+### As an instance host
 
-1. Choose your flavour!
-2. Add the contents of `env/<flavour>.env` to either your environment variables or your `whoogle.env`.
+1.  Add the contents of the flavor of your choice from [`env/`](./env/) to either your environment variables or your `whoogle.env`.
 
 ## 💝 Thanks to
 

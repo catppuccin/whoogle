@@ -1,0 +1,54 @@
+---
+whiskers:
+  version: "2.3.0"
+  matrix:
+    - flavor
+  filename: "css/{{ flavor.identifier }}.css"
+---
+:root {
+    {%- if flavor.dark %}
+    {%- set prefix = "--whoogle-dark" %}
+    /* DARK THEME COLORS */
+    {%- else %}
+    {%- set prefix = "--whoogle" %}
+    /* LIGHT THEME COLORS */
+    {%- endif %}
+    {{ prefix }}-logo: #{{ text.hex }};
+    {{ prefix }}-page-bg: #{{ base.hex }};
+    {{ prefix }}-element-bg: #{{ surface1.hex }};
+    {{ prefix }}-text: #{{ text.hex }};
+    {{ prefix }}-contrast-text: #{{ subtext1.hex }};
+    {{ prefix }}-secondary-text: #{{ subtext0.hex }};
+    {{ prefix }}-result-bg: #{{ surface0.hex }};
+    {{ prefix }}-result-title: #{{ lavender.hex }};
+    {{ prefix }}-result-url: #{{ rosewater.hex }};
+    {{ prefix }}-result-visited: #{{ maroon.hex }};
+}
+
+#whoogle-w {
+    fill: #{{ blue.hex }};
+}
+
+#whoogle-h {
+    fill: #{{ red.hex }};
+}
+
+#whoogle-o-1 {
+    fill: #{{ yellow.hex }};
+}
+
+#whoogle-o-2 {
+    fill: #{{ blue.hex }};
+}
+
+#whoogle-g {
+    fill: #{{ green.hex }};
+}
+
+#whoogle-l {
+    fill: #{{ red.hex }};
+}
+
+#whoogle-e {
+    fill: #{{ yellow.hex }};
+}
